@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+        <title>Calendario</title>
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+        <link rel="stylesheet" href="calendar.css">
+    </head>
+
+    <body>
+        <div class="centralcontainer">
+            <button class="bckfwdbutton" onclick="changeMonth(0)">&#8592</button>
+            <div class="verticalflex">
+                <div style="display:flex;flex-direction:row;flex-wrap:wrap;align-content:baseline;">
+                    <h1 class="mese" id="meseDisplay"></h1>
+                    <p style="font-size:18px" id="weekday"></p>
+                </div>
+                <div class="calendar" id="calendar">
+                    <!-- calendar stuff here (do not put anything bc it'll clear on start) -->
+                </div>
+                <!--<form action="prenotazioni.php" method="post">
+                    <input type="text" name="date" id="date" class="hide">
+                    <button class="submitbtn" type="submit" onclick="submitDate()">Ok</button>
+                </form> -->
+                <!-- <a href="validation.html" class="submitbtn">Ok</a> -->
+                <a href="sms:+393394213614?body=Hello%20world!" class="submitbtn">Ok</a>
+            </div>
+            <button class="bckfwdbutton" onclick="changeMonth(1)">&#8594</button>
+        </div>
+    </body>
+    <script src="calendar.js"></script>
+</html>
