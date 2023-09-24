@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Prenota il tuo tavolo</title>
+    </head>
+
+    <body>
+        <section>
+            <div style="width:100%">
+                <h1>La Triade</h1>
+            </div>
+            <div class="navbar" >
+                <a href="menu.php" class="navbarItem">Asporto</a>
+                <a href="index.html" class="navbarItem">Home</a>
+                <a class="navbarItem" href="chisiamo.html">Chi siamo</a>
+                <a href="lavoraconnoi.html" class="navbarItem">Lavora con noi</a>
+                
+              <!--è il cosino per il menù da telefono -->
+                <div class="navMenu" style="background-color: white;"onclick="animateMenuBtn(this)">
+                    <div id="bar1" class="bar1"></div>
+                    <div id="bar2" class="bar2"></div>
+                    <div id="bar3" class="bar3"></div>
+                </div>
+            </div> 
+            <!-- visibile solo su mobile -->
+            <div class="altNavBar" id="altNavBar">
+                    <a href="index.html">Home</a>
+                    <a href="menu.php" >Asporto</a>
+                    <!-- <div class="divSepare"></div> -->
+                    <a  href="chisiamo.html">Chi siamo</a>
+                    <!-- <div class="divSepare"></div> -->
+                    <a href="lavoraconnoi.html" >Lavora con noi</a>
+                    <!-- <div class="divSepare"></div> -->
+                    <a href="index.html">Home</a>
+            </div>
+        </section>
+
+        <div class="parallaxdiv" style="width:100%">
+            <div id="widthPrenotazione">
+                <div class="scrittura" style="order:1;width:100%;">
+
+                    <h3 style="color:black;" class="prenotazioniFields">
+                        Qui puoi prenotare un tavolo
+                    </h3>
+
+                    <form action="prenotazioni.php" method="POST" style="width:100%">
+                        <div class="prenotazioni">
+                            <input class="prenotazioniFieldsP" type="tel" id="phone" name="phone" placeholder="Numero di telefono" required>
+                            <div class="prenotazioniFieldsFlex">
+                                <input class="prenotazioniFieldsP" type="text" id="nome" name="nome" style="width: 42%" placeholder="Nome" required>
+                                <input class="prenotazioniFieldsP" type="text" id="cognome" name="cognome" style="width: 42%" placeholder="Cognome" required>
+                            </div>
+                            <input class="prenotazioniFieldsP" style="margin-bottom:0px;" type="text" id="luogo" name="luogo" placeholder="Dove vorresti stare?" required>
+                            <p style="margin:0;margin-bottom:15px;color:var(--primaryColor);font-family:calibri;">Sala su, balcone, piazza (quando disponibile)</p>
+                            <div class="personCount">
+                                <input type="button" style="color:grey;font-size:56px;background:none;border:none;outline:none;width:fit-content;display:inline-block;" value="-" onclick="person(0)"></input>
+                                <p class="prenotazioniFieldsP" style="color: black; width: 30%;display: inline-block; padding: 5px" id="personCount">2</p>
+                                <input type="button" style="color:grey;font-size:46px;background:none;border:none;outline:none;width:fit-content;display:inline-block;" value="+" onclick="person(1)"></input>
+                                <input type="text" class="hide" name="persone" id="persone" value="2">
+                            </div>
+                            <textarea class="prenotazioniFieldsP" style="border-radius: 10px; font-family:calibri;" placeholder="Puoi scrivere il tuo  ordine, cos&igrave sapremo gi&agrave cosa portarti!" name="menu"></textarea>
+                            <!-- <input type="text" class="hide" name="menu" id="menu"> -->
+                            <input type="date" name="date" class="prenotazioniFieldsP" id="date" pattern="\d{2}/\d{2}/\d{4}">
+                            <!-- <button class="prenotazioniFields" onclick="checkPhoneNumber()" style="width:50%;margin-left:auto;margin-right:auto">Prenota ora!</button> -->
+                            <input type="submit" name="submmit" onclick="checkPhoneNumber()" value="Prenota ora!" class="prenotazioniFields">
+                        </div>
+                    </form>
+            
+                </div>
+            </div>   
+        </div>
+        <footer class="indicazioni">
+        <a class="infoLink" href="tel:0774 511356"> 0774 511356 </a>
+        <a class="infoLink" href="https://maps.app.goo.gl/sKx1cThwKsT1VdV89?g_st=com.hammerandchisel.discord.Share" target="_blank"> Piazza San Giovanni, 30 &#149 Montecelio (RM)</a> 
+        <a href="https://www.facebook.com/latriade2016" class="infoLink">Seguici su Facebook</a>
+        </footer>
+    </body> 
+    
+    <script src="scripts.js"></script>
+</html>

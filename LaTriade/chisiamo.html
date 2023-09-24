@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>La Triade</title>
+    </head>
+
+    <body>
+        <section>
+            <div style="width:100%">
+                <h1>La Triade</h1>
+            </div>
+            <div class="navbar" >
+                <a href="prenotazione.html" class="navbarItem">Prenotazioni</a>
+                <a href="menu.php" class="navbarItem">Asporto</a>
+                <a class="navbarItem" href="chisiamo.html">Chi siamo</a>
+                <a href="lavoraconnoi.html" class="navbarItem">Lavora con noi</a>
+                
+              <!--è il cosino per il menù da telefono -->
+                <div class="navMenu" style="background-color: white;"onclick="animateMenuBtn(this)">
+                    <div id="bar1" class="bar1"></div>
+                    <div id="bar2" class="bar2"></div>
+                    <div id="bar3" class="bar3"></div>
+                </div>
+            </div> 
+            <!-- visibile solo su mobile -->
+            <div class="altNavBar" id="altNavBar">
+                    <a href="index.html">Home</a>
+                    <a href="prenotazione.html" >Prenotazioni</a>
+                    <!-- <div class="divSepare"></div> -->
+                    <a href="menu.php" >Asporto</a>
+                    <!-- <div class="divSepare"></div> -->
+                    <a href="lavoraconnoi.html" >Lavora con noi</a>
+                    
+            </div>
+        </section>
+        <div class="parallaxdiv">
+            <div class="sezioneChiSiamo">
+                <div class="scrittura" style="order: 1">
+
+                    <h3>
+                        Corsi
+                    </h3>
+
+                    <p>
+
+                        Lorem ipsum
+
+                    </p>
+
+                </div>
+
+                <div class="scrittura" id="laNostraStoria" style="order: 2;">
+
+                    <h3>
+                        La nostra storia 
+                    </h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                        Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                        Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    </p>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.0203394098994!2d12.740972875160507!3d42.021296071226445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f77114310cb57%3A0x59e7abd877b0be3!2sLa%20Triade%20Pizzeria!5e0!3m2!1sit!2sit!4v1694364634615!5m2!1sit!2sit" width="90%" height="350px" style="border: 3px solid grey;border-radius:10px; margin:auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+                <div class="scrittura" style="order: 3">
+
+                    <h3>
+                        Contatti 
+                    </h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <footer class="indicazioni">
+            <a class="infoLink" href="tel:0774 511356">0774 511356 </a>
+            <a class="infoLink" href="https://maps.app.goo.gl/sKx1cThwKsT1VdV89?g_st=com.hammerandchisel.discord.Share" target="_blank">Piazza San Giovanni, 30 &#149 Montecelio (RM)</a> 
+            <a href="https://www.facebook.com/latriade2016" class="infoLink">Seguici su Facebook</a>
+        </footer>
+    </body>
+    <script src="scripts.js"></script>
+</html>

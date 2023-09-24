@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'calibri';
+    src: url(fonts/calibril.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --backgroundColor: #e9d8a6;
+
+    /* base colors */
+    --primaryColor: #ee9b00;
+    --secondaryColor: #94d2bd;
+
+    /* variants */
+    --primaryVar: #ca6702;
+    --secondaryVar: #0a9396;
+
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background-image: url('img/natureWallpaper.jpg');
+    width: 100%;
+    height: 100%;
+    margin: 0; padding: 0;
+}
+
+.centralcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    border-radius: 10px;
+    /* box-shadow: 3px 3px 15px grey;  */
+    width: 650px;
+    height: fit-content;
+    padding: 10px;
+    margin: 0;
+}
+
+.day {
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+    height: fit-content;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--secondaryVar);
+    text-align: center;
+    border-radius: 10px;   
+    transition: border-color .5s, background-color 1s; 
+    border: 0px solid black;
+    box-shadow: 0px 8px 0px var(--backgroundColor);
+}
+
+.day:hover {
+    border: 1px solid var(--secondaryVar);
+    background-color: var(--secondaryColor);
+}
+
+.bckfwdbutton {
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+    font-size: 36px;
+    width: 5%;
+    transition: width 1s, background-color 1s, border-radius 1s;
+    transition-timing-function: ease;
+}
+
+.bckfwdbutton:hover {
+    border-radius: 20px;
+    width: 8%;
+    background-color: var(--primaryVar);
+}
+
+.bckfwdbuttonFocused {
+    border-radius: 20px;
+    background-color: var(--primaryVar);
+    box-shadow: 0px 8px 0px var(--primaryColor);
+}
+
+.mese {
+    font-size: 26px;
+    text-align: center;
+}
+
+.submitbtn {
+    width: 10%;
+    background-color: var(--primaryColor);
+    border: 0px solid black;
+    border-radius: 10px;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-left: auto;
+}
+
+.weekdays {
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+    height: fit-content;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--primaryColor);
+    text-align: center;
+    border-radius: 100px;   
+    border: 0;
+    box-shadow: 0px 8px 0px var(--primaryVar);
+}
